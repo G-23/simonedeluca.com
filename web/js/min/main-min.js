@@ -1,0 +1,1 @@
+$(function(){$(".project").click(function(t){alert("dui"),t.preventDefault(),$this=$("this"),$this.next().slideToggle()})});
