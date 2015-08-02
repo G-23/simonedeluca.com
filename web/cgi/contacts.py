@@ -13,8 +13,8 @@ message = form.getvalue('message')
 if not email or not message:
     print 'err: Oops, Every field is required!'
 else:
-    msg = mail.EmailMessage(sender = 'simdeluca92@gmail.com', subject = 'Contact from Simonedeluca.com')
-    msg.to = 'simdeluca92@gmail.com'
+    msg = mail.EmailMessage(sender = '************', subject = 'Contact from Simonedeluca.com')
+    msg.to = '************,'
     msg.body = 'EMAIL: %s\n\nMESSAGE:\n%s' % (email,message)
     msg.send()
     print 'ok: Whoop, Message received!'
